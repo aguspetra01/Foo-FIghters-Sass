@@ -1,101 +1,94 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*------------------INDEX------------------*/
-
-html{
-    scroll-behavior: smooth;
-}
-
+/*--------MIXIN INICIO--------*/
+/*--------MIXIN FIN--------*/
 /*Encabezado*/
-.encabezadoInicio{
-    width: 100%;
-    height: 600px;
-    background-image: url(img/miembros.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-/*  font-family: 'Roboto', regular;*/
-    font-family: 'Louis George Café', regular;
+.encabezadoInicio {
+  height: 600px;
+  width: 100%;
+  background-image: url(img/miembros.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /*  font-family: 'Roboto', regular;*/
+  font-family: "Louis George Café", regular;
 }
 
-.encabezado{
-    width: 100%;
-    height: 250px;
-    font-family: 'Roboto', regular;
-    background-image: url(img/portada4.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+.encabezado {
+  width: 100%;
+  height: 250px;
+  font-family: "Roboto", regular;
+  background-image: url(img/portada4.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
 }
 
-.encabezado> nav > a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
-    font-style: italic;
-    font-family: 'Louis George Café', regular;
-    font-size: 20px;
-    font-weight: bold;
+.encabezado > nav > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  font-style: italic;
+  font-family: "Louis George Café", regular;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.encabezado> nav > a:hover{
-    text-decoration:wavy;
-    color: rgb(226, 226, 226);
+.encabezado > nav > a:hover {
+  text-decoration: wavy;
+  color: rgb(226, 226, 226);
 }
 
-
-
-.logo>img{
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-left: 40px;
-    margin-top: 20px;
-    transition: all 1.5s;
+.logo > img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  transition: all 1.5s;
 }
 
-nav{
-    padding-top: 40px; /*60px*/
-    padding-right: 40px;
-    float: right;
-    display: flex;
+nav {
+  padding-top: 40px;
+  /*60px*/
+  padding-right: 40px;
+  float: right;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  font-style: italic;
+  font-family: "Louis George Café", regular;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s;
 }
 
-nav > a{
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
-    font-style: italic;
-    font-family: 'Louis George Café', regular;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 0.5s;
+.logo > img:hover {
+  /*    transform: scale(1.2);*/
+  /*    transition: all 0.5s;*/
+  transform: rotate(360deg);
+  transition: all 1.5s;
 }
 
-.logo>img:hover{
-/*    transform: scale(1.2);*/
-/*    transition: all 0.5s;*/
-    transform: rotate(360deg);
-    transition: all 1.5s;
+nav > a:hover {
+  text-decoration: wavy;
+  color: rgb(165, 165, 165);
+  /*  transform: translateY(-10);*/
+  font-size: 25px;
+  transition: all 0.5s;
 }
-
-nav > a:hover{
-    text-decoration:wavy;
-    color: rgb(165, 165, 165);
-/*  transform: translateY(-10);*/
-    font-size: 25px;
-    transition: all 0.5s;
-}
-/*
-.wave{
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-}*/
-
 
 /*CONTENIDO*/
 /*
@@ -123,352 +116,374 @@ nav > a:hover{
     justify-content: center;
 }
 */
-.contenedorMulti{
-    width: 100%;
-    height: 1040px;
-    box-sizing: border-box;
-    padding-top: 80px;
-    background-color: #ffffff;
-    background-image: linear-gradient(0deg, #ffffff 0%, #b7b7b7 24%, #b7b7b7 49%, #b7b7b7 75%, #ffffff 100%);
+.contenedorMulti {
+  height: 1040px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 80px;
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #b7b7b7 24%, #b7b7b7 49%, #b7b7b7 75%, #ffffff 100%);
 }
 
-.primerParteIndex{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
+.primerParteIndex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
-.infoIndex{
-    width: 600px;
-    height: 400px;
-    text-align: center;
-    padding: 10px;
-    transition: all 0.5s;
+.infoIndex {
+  height: 400px;
+  width: 600px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.infoIndex p {
+  font-size: 23px;
+  font-family: "Indie Flower", cursive;
 }
 
-.infoIndex:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
+.infoIndex:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
-#tituloIndex{
-    font-size: 55px;
-    font-family: 'Permanent Marker', cursive;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.infoIndex>p{
-    font-size: 23px;
-    font-family: 'Indie Flower', cursive;
+#tituloIndex {
+  font-size: 55px;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.spotify{
-    float: right;
-    width: 600px;
-    height: 400px;
-    transition: all 0.5s;
+.spotify {
+  float: right;
+  height: 400px;
+  width: 600px;
+  transition: all 0.5s;
 }
 
-.spotify:hover{
-    transition: all 0.5s;
-    box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
+.spotify:hover {
+  transition: all 0.5s;
+  box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
 }
 
-.multimedia{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.multimedia {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.videos--posicion{
-    border-radius: 12px;
-    width: 600px;
-    height: 400px;
-    transition: all 1.5s;
+.videos--posicion {
+  border-radius: 12px;
+  height: 400px;
+  width: 600px;
+  transition: all 1.5s;
 }
 
-.videos--posicion:hover{
-    transition: all 0.5s;
-    box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
+.videos--posicion:hover {
+  transition: all 0.5s;
+  box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
 }
 
 /*Pie de Pagina*/
-.pieDePagina{
-    width: 100%;
-    height: 130px;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='100%' height='130' preserveAspectRatio='none' viewBox='0 0 1442 130'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1033%26quot%3b)' fill='none'%3e%3crect width='1442' height='130' x='0' y='0' fill='rgba(22%2c 22%2c 22%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c452.347C82.143%2c437.944%2c137.637%2c365.934%2c214.726%2c334.12C315.509%2c292.527%2c459.367%2c328.022%2c520.309%2c237.617C579.156%2c150.32%2c510.589%2c32.597%2c487.176%2c-70.045C465.643%2c-164.443%2c448.084%2c-260.383%2c389.183%2c-337.229C328.058%2c-416.976%2c248.014%2c-488.951%2c149.808%2c-510.198C53.941%2c-530.939%2c-38.597%2c-479.529%2c-132.136%2c-450.015C-223.669%2c-421.134%2c-325.378%2c-408.798%2c-391.637%2c-339.356C-459.077%2c-268.676%2c-471.691%2c-166.158%2c-493.782%2c-70.995C-517.861%2c32.732%2c-570.557%2c143.501%2c-526.198%2c240.307C-481.843%2c337.104%2c-368.021%2c379.185%2c-269.263%2c418.981C-183.643%2c453.483%2c-90.923%2c468.289%2c0%2c452.347' fill='%230e0e0e'%3e%3c/path%3e%3cpath d='M1442 649.382C1544.797 659.773 1656.979 655.343 1740.753 594.8679999999999 1823.343 535.248 1847.439 426.823 1882.69 331.256 1915.46 242.417 1941.532 153.248 1938.561 58.605000000000004 1935.315-44.803 1927.596-154.144 1864.872-236.421 1800.6779999999999-320.625 1694.749-355.685 1595.208-391.779 1489.818-429.994 1376.108-491.20899999999995 1271.201-451.688 1166.722-412.328 1123.528-290.714 1068.73-193.44 1023.354-112.89099999999999 1008.028-24.671999999999997 980.8679999999999 63.699 947.9259999999999 170.881 848.809 277.69399999999996 892.147 381.11 935.231 483.918 1079.513 489.274 1179.696 538.153 1266.814 580.658 1345.557 639.633 1442 649.382' fill='%231e1e1e'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1033'%3e%3crect width='1442' height='130' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    box-sizing: border-box;
-    padding-top: 20px;
-    text-align: center;
+.pieDePagina {
+  height: 130px;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='100%' height='130' preserveAspectRatio='none' viewBox='0 0 1442 130'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1033%26quot%3b)' fill='none'%3e%3crect width='1442' height='130' x='0' y='0' fill='rgba(22%2c 22%2c 22%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c452.347C82.143%2c437.944%2c137.637%2c365.934%2c214.726%2c334.12C315.509%2c292.527%2c459.367%2c328.022%2c520.309%2c237.617C579.156%2c150.32%2c510.589%2c32.597%2c487.176%2c-70.045C465.643%2c-164.443%2c448.084%2c-260.383%2c389.183%2c-337.229C328.058%2c-416.976%2c248.014%2c-488.951%2c149.808%2c-510.198C53.941%2c-530.939%2c-38.597%2c-479.529%2c-132.136%2c-450.015C-223.669%2c-421.134%2c-325.378%2c-408.798%2c-391.637%2c-339.356C-459.077%2c-268.676%2c-471.691%2c-166.158%2c-493.782%2c-70.995C-517.861%2c32.732%2c-570.557%2c143.501%2c-526.198%2c240.307C-481.843%2c337.104%2c-368.021%2c379.185%2c-269.263%2c418.981C-183.643%2c453.483%2c-90.923%2c468.289%2c0%2c452.347' fill='%230e0e0e'%3e%3c/path%3e%3cpath d='M1442 649.382C1544.797 659.773 1656.979 655.343 1740.753 594.8679999999999 1823.343 535.248 1847.439 426.823 1882.69 331.256 1915.46 242.417 1941.532 153.248 1938.561 58.605000000000004 1935.315-44.803 1927.596-154.144 1864.872-236.421 1800.6779999999999-320.625 1694.749-355.685 1595.208-391.779 1489.818-429.994 1376.108-491.20899999999995 1271.201-451.688 1166.722-412.328 1123.528-290.714 1068.73-193.44 1023.354-112.89099999999999 1008.028-24.671999999999997 980.8679999999999 63.699 947.9259999999999 170.881 848.809 277.69399999999996 892.147 381.11 935.231 483.918 1079.513 489.274 1179.696 538.153 1266.814 580.658 1345.557 639.633 1442 649.382' fill='%231e1e1e'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1033'%3e%3crect width='1442' height='130' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  box-sizing: border-box;
+  padding-top: 20px;
+  text-align: center;
+}
+.pieDePagina p {
+  font-family: "Coolvetica", regular;
+  color: white;
+  padding-top: 10px;
 }
 
-.redesSociales{
-    display: flex;
-    justify-content: center;
+.redesSociales {
+  display: flex;
+  justify-content: center;
 }
 
-.redesSociales>a>i{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 35px;
-    margin-bottom: 20px;
-    color: white;
-    text-align: center;
-    transition: all 0.5s;
-}
-.redesSociales>a>i:hover{
-    font-size: 40px;
-    transition: all 0.5s;
-}  
-
-
-.redesSociales>a>#facebook:hover{
-    color: rgb(66, 103, 178);
-}
-.redesSociales>a>#instagram:hover{
-    color: #c23284;
-}
-.redesSociales>a>#twitter:hover{
-    color: rgb(8, 129, 185);
-}
-.redesSociales>a>#youtube:hover{
-    color: rgb(185, 10, 10);
+.redesSociales > a > i {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  transition: all 0.5s;
 }
 
-.pieDePagina> p{
-    font-family: 'Coolvetica', regular;
-    color: white;
-    padding-top: 10px;
+.redesSociales > a > i:hover {
+  font-size: 40px;
+  transition: all 0.5s;
 }
 
-.subir{
-    height: 40px;
-    width: 40px;
-    color: white;
-    background-color: black;
-    border: 5px white solid;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-    text-align: center;
-    font-size: 22px;
-    line-height: 35px;
-    box-shadow: 0 0 10px rgb(107, 107, 107);
-    transition: all 0.5s;
-}
-.subir>i{
-    color: white;
+/*---------MAPA INICIO--------*/
+/*---------MAPA FIN--------*/
+.redesSociales > a > #facebook:hover {
+  color: rgb(66, 103, 178);
 }
 
-.subir:hover{
-    transform: scale(1.2);
-    transition: all 0.5s;
+.redesSociales > a > #instagram:hover {
+  color: #c23284;
+}
+
+.redesSociales > a > #twitter:hover {
+  color: rgb(8, 129, 185);
+}
+
+.redesSociales > a > #youtube:hover {
+  color: rgb(185, 10, 10);
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: black;
+  border: 5px white solid;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 35px;
+  box-shadow: 0 0 10px rgb(107, 107, 107);
+  transition: all 0.5s;
+}
+.subir i {
+  color: white;
+}
+
+.subir:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 /*   @MEDIA QUERY */
-
 /*
 @media only screen and (min-width:500px) and (max-width:686px){
-    
+
 }*/
-
-@media only screen and (max-width:1300px){
-    
-    .primerParteIndex{
-        margin-bottom: 40px;
-    }
-    .infoIndex{
-        margin-bottom: 40px;
-    }
-    #video1{
-        margin-bottom: 40px;
-    }
-    #video2{
-        margin-bottom: 40px;
-    }
-}
-@media only screen and (max-width:1200px){
-    .contenedorMulti{
-        height: 1840px;
-    }
-}
-@media only screen and (max-width:1000px){
-    .encabezadoInicio> nav > a{
-        font-size: 16px;
-    }
-}
-@media only screen and (max-width:800px){
-    .contenedorMulti{
-        height: 1552px;
-        padding-top: 60px;
-    }
-    .infoIndex{
-        width: 500px;
-        height: 333px;
-    }
-    .spotify{
-        width: 500px;
-        height: 333px;
-    }
-    .videos--posicion{
-        width: 500px;
-        height: 333px;
-    }
-    #tituloIndex{
-        font-size: 46px;
-        margin-bottom: 20px;
-    }
-    .infoIndex>p{
-        font-size: 19px;
-    }
-}
-@media only screen and (max-width:686px){
-    .encabezadoInicio{
-        width: 100%;
-        height: 300px;
-        background-image: url(img/miembros.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    /*  font-family: 'Roboto', regular;*/
-        font-family: 'Louis George Café', regular;
-    }
-}
-@media only screen and (max-width:540px){
-    .contenedorMulti{
-        height: 1274px;
-        padding-top: 50px;
-    }
-    .infoIndex{
-        width: 400px;
-        height: 266px;
-    }
-    .spotify{
-        width: 400px;
-        height: 266px;
-    }
-    .videos--posicion{
-        width: 400px;
-        height: 266px;
-    }
-    #tituloIndex{
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-    .infoIndex>p{
-        font-size: 15px;
-    }
-}
-@media only screen and (min-width:320px) and (max-width:420px){
-    .contenedorMulti{
-        height: 1110px;
-        padding-top: 50px;
-    }
-    .infoIndex{
-        width: 300px;
-        height: 300px;
-    }
-    .spotify{
-        width: 300px;
-        height: 200px;
-    }
-    .videos--posicion{
-        width: 300px;
-        height: 200px;
-    }
-    #tituloIndex{
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-    .infoIndex>p{
-        font-size: 15px;
-    }
-}
-
-/*------------------BIOGRAFÍA------------------*/
-#tituloBio{
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 40px;
-    margin-top: 30px;
+@media only screen and (max-width: 1300px) {
+  .primerParteIndex {
     margin-bottom: 40px;
-}
-#grillaBio{
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-.imgBio>img{
-    width: 100%;
-    overflow: hidden;
-}
-.textoBio{
-    font-family: 'Louis George Café', regular;
-}
-.row{
-    overflow: hidden;
-}
-/*------------------MIEMBROS------------------*/
-#tituloMiembros{
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 40px;
-    margin-top: 30px;
-}
+  }
 
-#grillaMiembros{
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
+  .infoIndex {
+    margin-bottom: 40px;
+  }
 
-.contMiem{
-    text-align: center;
+  #video1 {
+    margin-bottom: 40px;
+  }
+
+  #video2 {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contenedorMulti {
+    height: 1840px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .encabezadoInicio > nav > a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contenedorMulti {
+    height: 1552px;
+    padding-top: 60px;
+  }
+
+  .infoIndex {
+    height: 333px;
+    width: 500px;
+  }
+
+  .spotify {
+    height: 333px;
+    width: 500px;
+  }
+
+  .videos--posicion {
+    height: 333px;
+    width: 500px;
+  }
+
+  #tituloIndex {
+    font-size: 46px;
     margin-bottom: 20px;
-}
- 
-.contMiem>p{
-    font-size: 18px;
-}
+  }
 
-.contMiem>img{
+  .infoIndex > p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 686px) {
+  .encabezadoInicio {
+    height: 300px;
     width: 100%;
+    background-image: url(img/miembros.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /*  font-family: 'Roboto', regular;*/
+    font-family: "Louis George Café", regular;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contenedorMulti {
+    height: 1274px;
+    padding-top: 50px;
+  }
+
+  .infoIndex {
+    height: 266px;
+    width: 400px;
+  }
+
+  .spotify {
+    height: 266px;
+    width: 400px;
+  }
+
+  .videos--posicion {
+    height: 266px;
+    width: 400px;
+  }
+
+  #tituloIndex {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .infoIndex > p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .contenedorMulti {
+    height: 1110px;
+    padding-top: 50px;
+  }
+
+  .infoIndex {
+    height: 200px;
+    width: 300px;
+  }
+
+  .spotify {
+    height: 200px;
+    width: 300px;
+  }
+
+  .videos--posicion {
+    height: 200px;
+    width: 300px;
+  }
+
+  #tituloIndex {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .infoIndex > p {
+    font-size: 15px;
+  }
+}
+/*------------------BIOGRAFÍA------------------*/
+#tituloBio {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.nombMiembro{
-    margin-top: 20px;
-    font-family: 'Louis George Café', regular;
-    font-size: 28px;
-    font-weight: bold;
+#grillaBio {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.imgBio > img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.textoBio {
+  font-family: "Louis George Café", regular;
+}
+
+.row {
+  overflow: hidden;
+}
+
+/*------------------MIEMBROS------------------*/
+#tituloMiembros {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+#grillaMiembros {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.contMiem {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contMiem p {
+  font-size: 18px;
+}
+
+.contMiem > img {
+  width: 100%;
+}
+
+.nombMiembro {
+  margin-top: 20px;
+  font-family: "Louis George Café", regular;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 /*------------------DISCOS------------------*/
-#tituloDiscos{
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 40px;
-    margin-top: 30px;
+#tituloDiscos {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
-#grillaDiscos{
-    margin-top: 30px;
-    margin-bottom: 30px;
+#grillaDiscos {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.contDisc>img{
-    width: 100%;
+.contDisc {
+  margin-bottom: 20px;
+}
+.contDisc h2 {
+  font-size: 24px;
+  font-family: "Louis George Café", regular;
+  font-weight: bold;
+}
+.contDisc img {
+  width: 100%;
 }
 
-.contDisc>h2{
-    font-size: 24px;
-    font-family: 'Louis George Café', regular;
-    font-weight: bold;
+.nombDisc {
+  margin-top: 20px;
 }
 
-.contDisc{
-    margin-bottom: 20px;
-}
-
-.nombDisc{
-    margin-top: 20px;
-}
+/*# sourceMappingURL=estilos.css.map */
