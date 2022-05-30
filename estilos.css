@@ -90,32 +90,6 @@ nav > a:hover {
   transition: all 0.5s;
 }
 
-/*CONTENIDO*/
-/*
-#grillaIndex{
-    display: grid;
-    grid-template-areas: "izq der"
-                         "izq der";
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px 300px;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-}
-#izquierda{
-    grid-area: izq;
-    background-color: #c23284;
-}
-#derecha{
-    grid-area: der;
-    background-color: cadetblue;
-}
-.bordeGrillaIndex{
-    border: 5px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 .contenedorMulti {
   height: 1040px;
   width: 100%;
@@ -213,12 +187,6 @@ nav > a:hover {
   margin-bottom: 20px;
   color: white;
   text-align: center;
-  transition: all 0.5s;
-}
-
-.redesSociales > a > i:hover {
-  font-size: 40px;
-  transition: all 0.5s;
 }
 
 /*---------MAPA INICIO--------*/
@@ -267,7 +235,6 @@ nav > a:hover {
 /*   @MEDIA QUERY */
 /*
 @media only screen and (min-width:500px) and (max-width:686px){
-
 }*/
 @media only screen and (max-width: 1300px) {
   .primerParteIndex {

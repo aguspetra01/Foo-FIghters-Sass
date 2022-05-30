@@ -93,33 +93,6 @@ nav > a:hover{
     font-size: 25px;
     transition: all 0.5s;
 }
-
-/*CONTENIDO*/
-/*
-#grillaIndex{
-    display: grid;
-    grid-template-areas: "izq der"
-                         "izq der";
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px 300px;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-}
-#izquierda{
-    grid-area: izq;
-    background-color: #c23284;
-}
-#derecha{
-    grid-area: der;
-    background-color: cadetblue;
-}
-.bordeGrillaIndex{
-    border: 5px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 .contenedorMulti{
     @include sizes(100%, 1040px);
     box-sizing: border-box;
@@ -127,14 +100,12 @@ nav > a:hover{
     background-color: #ffffff;
     background-image: linear-gradient(0deg, #ffffff 0%, #b7b7b7 24%, #b7b7b7 49%, #b7b7b7 75%, #ffffff 100%);
 }
-
 .primerParteIndex{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 80px;
 }
-
 .infoIndex{
     @include sizes(600px, 400px);
     text-align: center;
@@ -145,47 +116,39 @@ nav > a:hover{
         font-family: 'Indie Flower', cursive;
     }
 }
-
 .infoIndex:hover{
     transform: scale(1.05);
     transition: all 0.5s;
 }
-
 #tituloIndex{
     font-size: 55px;
     font-family: 'Permanent Marker', cursive;
     margin-top: 10px;
     margin-bottom: 30px;
 }
-
 .spotify{
     float: right;
     @include sizes(600px, 400px);
     transition: all 0.5s;
 }
-
 .spotify:hover{
     transition: all 0.5s;
     box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
 }
-
 .multimedia{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 .videos--posicion{
     border-radius: 12px;
     @include sizes(600px, 400px);
     transition: all 1.5s;
 }
-
 .videos--posicion:hover{
     transition: all 0.5s;
     box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
 }
-
 /*Pie de Pagina*/
 .pieDePagina{
     @include sizes(100%, 130px);
@@ -199,12 +162,10 @@ nav > a:hover{
         padding-top: 10px;
     }
 }
-
 .redesSociales{
     display: flex;
     justify-content: center;
 }
-
 .redesSociales>a>i{
     margin-left: 20px;
     margin-right: 20px;
@@ -212,13 +173,7 @@ nav > a:hover{
     margin-bottom: 20px;
     color: white;
     text-align: center;
-    transition: all 0.5s;
 }
-.redesSociales>a>i:hover{
-    font-size: 40px;
-    transition: all 0.5s;
-}  
-
 /*---------MAPA INICIO--------*/
 $colores: (
     colorFB: rgb(66, 103, 178),
@@ -227,7 +182,6 @@ $colores: (
     colorYT: rgb(185, 10, 10)
 );
 /*---------MAPA FIN--------*/
-
 .redesSociales>a>#facebook:hover{
     color: map-get($colores, colorFB);
 }
@@ -240,7 +194,6 @@ $colores: (
 .redesSociales>a>#youtube:hover{
     color: map-get($colores, colorYT);
 }
-
 .subir{
     @include sizes(40px, 40px);
     color: white;
@@ -259,21 +212,15 @@ $colores: (
         color: white;
     }
 }
-
 .subir:hover{
     transform: scale(1.2);
     transition: all 0.5s;
 }
-
 /*   @MEDIA QUERY */
-
 /*
 @media only screen and (min-width:500px) and (max-width:686px){
-    
 }*/
-
 @media only screen and (max-width:1300px){
-    
     .primerParteIndex{
         margin-bottom: 40px;
     }
@@ -374,7 +321,6 @@ $colores: (
         font-size: 15px;
     }
 }
-
 /*------------------BIOGRAFÍA------------------*/
 #tituloBio{
     text-align: center;
@@ -404,12 +350,10 @@ $colores: (
     font-size: 40px;
     margin-top: 30px;
 }
-
 #grillaMiembros{
     margin-top: 40px;
     margin-bottom: 50px;
 }
-
 .contMiem{
     text-align: center;
     margin-bottom: 20px;
@@ -417,18 +361,15 @@ $colores: (
         font-size: 18px;
     }
 }
-
 .contMiem>img{
     width: 100%;
 }
-
 .nombMiembro{
     margin-top: 20px;
     font-family: $fuenteTexto;
     font-size: 28px;
     font-weight: bold;
 }
-
 /*------------------DISCOS------------------*/
 #tituloDiscos{
     text-align: center;
@@ -436,12 +377,10 @@ $colores: (
     font-size: 40px;
     margin-top: 30px;
 }
-
 #grillaDiscos{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .contDisc{
     margin-bottom: 20px;
     h2{
@@ -453,7 +392,6 @@ $colores: (
         width: 100%;
     }
 }
-
 .nombDisc{
     margin-top: 20px;
 }

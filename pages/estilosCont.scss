@@ -148,6 +148,12 @@ nav > a:hover{
     box-sizing: border-box;
     padding-top: 20px;
     text-align: center;
+    margin-bottom: 0;
+    p{
+        font-family: 'Coolvetica', regular;
+        color: white;
+        padding-top: 10px;
+    }
 }
 
 .redesSociales{
@@ -162,12 +168,7 @@ nav > a:hover{
     margin-bottom: 20px;
     color: white;
     text-align: center;
-    transition: all 0.5s;
 }
-.redesSociales>a>i:hover{
-    font-size: 40px;
-    transition: all 0.5s;
-}  
 
 /*---------MAPA INICIO--------*/
 $colores: (
@@ -189,10 +190,4 @@ $colores: (
 }
 .redesSociales>a>#youtube:hover{
     color: map-get($colores, colorYT);
-}
-
-.pieDePagina> p{
-    font-family: 'Coolvetica', regular;
-    color: white;
-    padding-top: 10px;
 }
