@@ -14,20 +14,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezado">  
-        <div class="logo">
-            <img src="../img/logoFFblack.png" alt="logo">
-        </div>   
-        <nav>    
-            <a href="../index.html">INICIO</a>
-            <a href="biografia.html">Biografía</a>
-            <a href="miembros.html">Miembros</a>
-            <a href="discos.html">Discos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>   
-
-<!--/////////////////////////////////////////////////////////////////////////////////////-->
+    <!--BARRA NAVEGACION INICIO-->
+    <nav class="navbar2 navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand logo2" href="../index.html"><img src="../img/logoFFblack.png" alt="logo"></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon2"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/miembros.html">Miembros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/discos.html">Discos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--BARRA NAVEGACION FIN--> 
     <p id="tituloDiscos">Discos</p>
     <div class="container" id="grillaDiscos">
         <div class="row">
@@ -83,7 +99,6 @@
             </div>
         </div>
     </div>
-
     <!--PIE DE PÁGINA-->
     <footer class="pieDePagina">
         <section class="redesSociales">
@@ -92,13 +107,9 @@
             <a href="https://twitter.com/foofighters?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter" id="twitter"></i></a>
             <a href="https://www.youtube.com/channel/UCi2KNss4Yx73NG0JARSFe0A"><i class="fa-brands fa-youtube" id="youtube"></i></a>
         </section>
-
         <p>by Agustín Petraccaro&reg;</p>
-        
     </footer>
     <a href="#" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
-
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
