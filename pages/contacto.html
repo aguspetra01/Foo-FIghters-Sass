@@ -7,38 +7,43 @@
     <title>FF Contacto</title>
     <meta name="description" content="Aquí podrás contactarte con nosotros, enviandonos un mensaje.">
     <meta name="keywords" content="CONTACTO, MAIL, FOO FIGHTERS, BANDA, ROCK, GRUNGE, PROYECTO">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="estilosCont.css">
     <link rel="shortcut icon" href="../img/faviconFF.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
-
-    <!--
-    <ul>
-        <li><a href="../index.html">INICIO</a></li>
-        <li><a href="biografia.html">Biografía</a></li>
-        <li><a href="miembros.html">Miembros</a></li>
-        <li><a href="discos.html">Discos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    -->
-    <!--
-    <div class="imagenFondo">
-        <img src="../img/miembros.jpg" alt="">
-    </div>-->
 <body>
-    <header class="encabezadoCont"> 
-        <div class="logo">
-            <img src="../img/logoFFblack.png" alt="logo">
-        </div>   
-        <nav>    
-            <a href="../index.html">INICIO</a>
-            <a href="biografia.html">Biografía</a>
-            <a href="miembros.html">Miembros</a>
-            <a href="discos.html">Discos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <!--BARRA NAVEGACION INICIO-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="#"><img src="../img/logoFFblack.png" alt="logo"></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="biografia.html">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="miembros.html">Miembros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discos.html">Discos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--BARRA NAVEGACION FIN-->
     <br>
     <br>
     <form action="enviar .php" method="get" enctype="text/plain">
@@ -62,44 +67,25 @@
                 <option>Ecuador</option>
                 <option>Uruguay</option>
             </select>
-            <!--AREA PARA ESCRIBIR
-
-            <textarea name="Comentario" id="" cols="30" rows="6" placeholder="Escriba su mensaje"></textarea>   -->
-            
-            <!--BOTONES-->
             <input class="botones" type="submit" value="Enviar">
             <br>
             <input class="botones" type="reset" value="Borrar">
-            <!--CHECKBOX DE OPCION ÚNICA-->
-            <!--
-            <p>Ingrese su genero</p>
-            <input name="genero" type="radio">
-            <label for="">Masculino</label>
-            <br>
-            <input name="genero" type="radio">
-            <label for="">Femenino</label>
-            <br>
-            <input name="genero" type="radio">
-            <label for="">Sin especificar</label>
-            <br>
-            <br>
-            -->
         </section>
     </form>
-    
-
     <!--PIE DE PÁGINA-->
     <footer class="pieDePagina">
-
         <section class="redesSociales">
             <a href="https://www.facebook.com/foofighters"><i class="fa-brands fa-facebook" id="facebook"></i></a>
             <a href="https://www.instagram.com/foofighters/?hl=es-la"><i class="fa-brands fa-instagram" id="instagram"></i></a>
             <a href="https://twitter.com/foofighters?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter" id="twitter"></i></a>
             <a href="https://www.youtube.com/channel/UCi2KNss4Yx73NG0JARSFe0A"><i class="fa-brands fa-youtube" id="youtube"></i></a>
         </section>
-
         <p>by Agustín Petraccaro&reg;</p>
-        
     </footer>
+    <!--SCRIPS INICIO-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <!--SCRIPS FIN-->
 </body>
 </html>

@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   background-image: url(../img/miembros2.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
 }
 
 html {
@@ -19,79 +22,122 @@ html {
 /*--------MIXIN INICIO--------*/
 /*--------MIXIN FIN--------*/
 /*-----PARA EXTENDS INICIO-----*/
-.transition1, .logo > img, .logo > img:hover {
+.transition1 {
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
 
-.transition1, .logo > img, .logo > img:hover {
+.transition1 {
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
 
 /*-----PARA EXTENDS FIN-----*/
-.encabezadoCont {
+/*--------------NAVBAR INICIO----------------*/
+.navbar {
   height: 100px;
-  width: 100%;
-  /*  font-family: 'Roboto', regular;*/
-  font-family: "Louis George Café", regular;
+  background: transparent;
 }
 
-.logo > img {
+.navbar-collapse {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.logo img {
   height: 100px;
   width: 100px;
-  float: left;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 20px;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 
-nav {
-  padding-top: 40px;
-  /*60px*/
-  padding-right: 40px;
-  float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  padding-left: 10px;
-  font-style: italic;
-  font-family: "Louis George Café", regular;
-  font-size: 20px;
-  font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.logo > img:hover {
-  /*    transform: scale(1.2);*/
-  /*    transition: all 0.5s;*/
+.logo img:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 
-nav > a:hover {
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-  color: white;
-  /*  transform: translateY(-10);*/
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
   font-size: 25px;
+  padding-right: 25px;
+  padding-top: 50px;
+  font-family: 'Dosis 700', sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 10px;
+  margin-left: 15px;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #515151;
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-/*FORMULARIO*/
+.navbar-dark .navbar-toggler {
+  color: black;
+  border-color: black;
+  background-color: black;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .navbar-collapse .navbar-nav {
+    background-color: rgba(48, 48, 48, 0.515);
+    margin-top: 7px;
+    width: 110px;
+    margin-right: 0;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+    color: white;
+  }
+}
+
+/*--------------NAVBAR FIN----------------*/
+/*-------------FORMULARIO INICIO-------------*/
 .formulario {
-  height: 450px;
+  height: 500px;
   width: 400px;
   background-color: black;
   border-radius: 10px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 100px;
   -webkit-box-shadow: 15px 15px 15px #383838;
           box-shadow: 15px 15px 15px #383838;
@@ -146,7 +192,7 @@ nav > a:hover {
   border-style: none;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -158,7 +204,8 @@ nav > a:hover {
   transition: all 0.5s;
 }
 
-/*Pie de Pagina*/
+/*-------------FORMULARIO FIN-------------*/
+/*-------------FOOTER INICIO-------------*/
 .pieDePagina {
   width: 100%;
   height: 130px;
@@ -171,7 +218,7 @@ nav > a:hover {
 }
 
 .pieDePagina p {
-  font-family: 'Coolvetica', regular;
+  font-family: 'Dosis 200', sans-serif;
   color: white;
   padding-top: 10px;
 }
@@ -192,8 +239,18 @@ nav > a:hover {
   margin-bottom: 20px;
   color: white;
   text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
+.redesSociales > a > i:hover {
+  -webkit-transform: translate(0, -7px);
+          transform: translate(0, -7px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*-------------FOOTER FIN-------------*/
 /*---------MAPA INICIO--------*/
 /*---------MAPA FIN--------*/
 .redesSociales > a > #facebook:hover {

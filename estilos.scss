@@ -16,65 +16,6 @@ html{
     width: $width;
 }
 /*--------MIXIN FIN--------*/
-/*Encabezado*/
-/*
-.encabezado{
-    width: 100%;
-    height: 250px;
-    font-family: 'Roboto', regular;
-    background-image: url(img/portada4.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-}
-.encabezado> nav > a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding-left: 10px;
-    font-style: italic;
-    font-family: $fuenteTexto;
-    font-size: 20px;
-    font-weight: bold;
-}
-.encabezado> nav > a:hover{
-    text-decoration:wavy;
-    color: rgb(226, 226, 226);
-}
-.logo>img{
-    @include sizes(100px, 100px);
-    float: left;
-    margin-left: 40px;
-    margin-top: 20px;
-    transition: all 1.5s;
-}
-nav{
-    padding-top: 40px;
-    padding-right: 40px;
-    float: right;
-    display: flex;
-    a{
-        text-decoration: none;
-        color: white;
-        padding-left: 10px;
-        font-style: italic;
-        font-family: $fuenteTexto;
-        font-size: 20px;
-        font-weight: bold;
-        transition: all 0.5s;
-    }
-}
-.logo>img:hover{
-
-    transform: rotate(360deg);
-    transition: all 1.5s;
-}
-nav > a:hover{
-    text-decoration:wavy;
-    color: rgb(165, 165, 165);
-    font-size: 25px;
-    transition: all 0.5s;
-}
-*/
 /*BARRA NAVEGACION INICIO*/
 .navbar{
     background-image: url(img/miembros.jpg);
@@ -86,8 +27,7 @@ nav > a:hover{
     margin-bottom: 80px;
 }
 .logo>img{
-    width: 100px;
-    height: 100px;
+    @include sizes(100px, 100px);
     margin-left: 20px;
     margin-top: 20px;
     transition: all 1.5s;
@@ -103,6 +43,7 @@ nav > a:hover{
     padding-top: 50px;
     font-family: 'Dosis 700', sans-serif;
     transition: all 0.5s;
+    justify-content: right;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
     color: rgb(162, 162, 162);
@@ -118,72 +59,19 @@ button, input, optgroup, select, textarea {
     margin-right: 20px;
 }
 .navbar-dark .navbar-toggler {
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(134, 134, 134);
 }
 .navbar-toggler-icon{
     color: rgb(255, 255, 255);
 }
 /*BARRA NAVEGACION FIN*/
-/*BARRA NAVEGACION 2 INICIO*/
-.navbar2{
-    background-image: url(img/portada4.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
-    height: 500px;
-    align-items:flex-start;
-    margin-bottom: 80px;
-}
-.logo2{
-    float: left;
-    img{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 20px;
-    transition: all 1.5s;
-    }
-}
-.logo2 > img:hover {
-    transform: rotate(360deg);
-    transition: all 1.5s;
-}
-.navbar2 .navbar-nav .nav-link {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    padding-right: 25px;
-    padding-top: 50px;
-    font-family: 'Dosis 700', sans-serif;
-    transition: all 0.5s;
-}
-.navbar2 .navbar-nav .nav-link:hover{
-    color: rgb(84, 84, 84);
-    transform: translate(0, -10px);
-    transition: all 0.5s;
-}
-.navbar-collapse {
-    float: right;
-    align-items: center;
-    justify-content: right;
-}
-button, input, optgroup, select, textarea {
-    margin-top: 50px;
-    margin-right: 20px;
-}
-.navbar-toggler2 {
-    border-color: rgb(0, 0, 0)!important;
-    float: right;
-}
-.navbar-toggler2 .navbar-toggler-icon2{
-    color: rgb(0, 0, 0)!important;
-}
-/*BARRA NAVEGACION 2 FIN*/
 .contenedorMulti{
     @include sizes(100%, 1040px);
     box-sizing: border-box;
     padding-top: 80px;
     background-color: #ffffff;
     background-image: linear-gradient(0deg, #ffffff 0%, #b7b7b7 24%, #b7b7b7 49%, #b7b7b7 75%, #ffffff 100%);
+    margin-bottom: 50px;
 }
 .primerParteIndex{
     display: flex;
@@ -337,6 +225,28 @@ $colores: (
         font-size: 16px;
     }
 }
+@media only screen and (max-width:991px){
+    .navbar{
+        height: 380px;
+    }
+    .navbar-collapse{
+        display: flex;
+        justify-content: right;
+    }
+    .navbar-collapse .navbar-nav{
+        background-color: rgba(48, 48, 48, 0.515);
+        margin-top: 7px;
+        width: 110px;
+        margin-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 18px;
+        padding-top: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: right;
+    }
+}
 @media only screen and (max-width:800px){
     .contenedorMulti{
         height: 1552px;
@@ -444,6 +354,35 @@ $colores: (
         height: 285px;
     }
 }
+@media only screen and (max-width:575px){
+    .imgBio>img{
+        width: 100%;
+        height: 265px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .textoBio{
+        height: 350px;
+    }
+}
+@media only screen and (max-width:520px){
+    .imgBio>img{
+        height: 245px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width:300px){
+    .imgBio>img{
+        height: 225px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 /*------------------MIEMBROS------------------*/
 #tituloMiembros{
     text-align: center;
@@ -462,9 +401,9 @@ $colores: (
     p{
         font-size: 18px;
     }
-}
-.contMiem>img{
-    width: 100%;
+    img{
+        width: 100%;
+    }
 }
 .nombMiembro{
     margin-top: 20px;

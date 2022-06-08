@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 $fuenteTexto: 'Louis George Café', regular;
 *{
     margin: 0;
@@ -8,6 +10,7 @@ body{
     background-image: url(../img/miembros2.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: top;
 }
 html{
     scroll-behavior: smooth;
@@ -26,54 +29,82 @@ html{
     transition: all 1.5s;
 }
 /*-----PARA EXTENDS FIN-----*/
-.encabezadoCont{
-    @include sizes(100%,100px);
-/*  font-family: 'Roboto', regular;*/
-    font-family: $fuenteTexto;
+/*--------------NAVBAR INICIO----------------*/
+.navbar{
+    height: 100px;
+    background: transparent;
 }
-.logo>img{
-    @include sizes(100px,100px);
-    float: left;
-    margin-left: 40px;
+.navbar-collapse {
+    align-items: center;
+    justify-content: right;
+}
+.logo img{
+    @include sizes(100px, 100px);
+    margin-left: 20px;
     margin-top: 20px;
-    @extend .transition1;
+    transition: all 1.5s;
 }
-nav{
-    padding-top: 40px; /*60px*/
-    padding-right: 40px;
-    float: right;
-    display: flex;
-    a{
-        text-decoration: none;
-        color: black;
-        padding-left: 10px;
-        font-style: italic;
-        font-family: $fuenteTexto;
-        font-size: 20px;
-        font-weight: bold;
-        transition: all 0.5s;
-    }
-}
-.logo>img:hover{
-/*    transform: scale(1.2);*/
-/*    transition: all 0.5s;*/
+.logo img:hover{
     transform: rotate(360deg);
-    @extend .transition1;
+    transition: all 1.5s;
 }
-nav > a:hover{
-    text-decoration:wavy;
-    color: rgb(255, 255, 255);
-/*  transform: translateY(-10);*/
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
     font-size: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    font-family: 'Dosis 700', sans-serif;
+    transition: all 0.5s;
+    justify-content: right;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px;
+    margin-left: 15px;
+}
+.navbar-nav{
+    text-align: right;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(81, 81, 81);
+    transform: translate(0, -10px);
     transition: all 0.5s;
 }
-/*FORMULARIO*/
+.navbar-dark .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: black;
+}
+.navbar-toggler-icon{
+    color: black;
+}
+@media only screen and (max-width:991px){
+    .navbar-collapse{
+        display: flex;
+        justify-content: right;
+    }
+    .navbar-collapse .navbar-nav{
+        background-color: rgba(48, 48, 48, 0.515);
+        margin-top: 7px;
+        width: 110px;
+        margin-right: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 18px;
+        padding-top: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: right;
+        color: white;
+    }
+}
+/*--------------NAVBAR FIN----------------*/
+/*-------------FORMULARIO INICIO-------------*/
 .formulario{
-    @include sizes(400px,450px);
+    @include sizes(400px,500px);
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 100px;
     box-shadow: 15px 15px 15px rgb(56, 56, 56);
     padding: 20px;
@@ -122,7 +153,7 @@ nav > a:hover{
     border-style: none;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: all 0.5s;
 }
 .botones:hover{
@@ -130,7 +161,8 @@ nav > a:hover{
     color: rgb(255, 255, 255);
     transition: all 0.5s;
 }
-/*Pie de Pagina*/
+/*-------------FORMULARIO FIN-------------*/
+/*-------------FOOTER INICIO-------------*/
 .pieDePagina{
     width: 100%;
     height: 130px;
@@ -140,7 +172,7 @@ nav > a:hover{
     text-align: center;
     margin-bottom: 0;
     p{
-        font-family: 'Coolvetica', regular;
+        font-family: 'Dosis 200', sans-serif;
         color: white;
         padding-top: 10px;
     }
@@ -156,7 +188,13 @@ nav > a:hover{
     margin-bottom: 20px;
     color: white;
     text-align: center;
+    transition: all 0.5s;
 }
+.redesSociales>a>i:hover{
+    transform: translate(0, -7px);
+    transition: all 0.5s;
+}
+/*-------------FOOTER FIN-------------*/
 /*---------MAPA INICIO--------*/
 $colores: (
     colorFB: rgb(66, 103, 178),
