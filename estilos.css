@@ -322,7 +322,7 @@ button, input, optgroup, select, textarea {
   }
   .navbar-collapse .navbar-nav {
     background-color: rgba(48, 48, 48, 0.515);
-    margin-top: 7px;
+    margin-top: -40px;
     width: 110px;
     margin-right: 0;
   }
