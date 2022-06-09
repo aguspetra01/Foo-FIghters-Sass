@@ -119,6 +119,7 @@ html{
         margin-top: 10px;
         color: white;
         font-family: 'Permanent Marker', cursive;
+        width: 100%;
     }
 }
 .ingresarTexto{
@@ -167,6 +168,17 @@ html{
 @media only screen and (max-width:465px){
     .formulario{
         transform: scale(0.85);
+        width: 100%;
+    }
+    .botones{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .elegirPais{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }
 /*-------------FORMULARIO FIN-------------*/
