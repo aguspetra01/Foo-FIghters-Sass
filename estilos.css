@@ -333,6 +333,9 @@ button, input, optgroup, select, textarea {
     padding-left: 10px;
     text-align: right;
   }
+  .navbar-dark .navbar-toggler {
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 800px) {

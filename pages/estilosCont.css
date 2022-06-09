@@ -127,6 +127,9 @@ html {
     text-align: right;
     color: white;
   }
+  .navbar-dark .navbar-toggler {
+    margin-right: 20px;
+  }
 }
 
 /*--------------NAVBAR FIN----------------*/
@@ -202,6 +205,13 @@ html {
   color: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media only screen and (max-width: 465px) {
+  .formulario {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
 }
 
 /*-------------FORMULARIO FIN-------------*/
