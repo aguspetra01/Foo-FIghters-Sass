@@ -195,6 +195,7 @@ html {
 textarea {
   resize: none;
   font-family: 'Dosis 200', sans-serif;
+  padding: 4px;
 }
 
 .botones {

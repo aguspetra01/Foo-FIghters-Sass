@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 $fuenteTexto: 'Louis George Café', regular;
 *{
     margin: 0;
@@ -334,7 +335,7 @@ $colores: (
     overflow: hidden;
 }
 .textoBio{
-    font-family: $fuenteTexto;
+    font-family: 'Roboto', sans-serif;
     height: 245px;
     font-size: 18px;
     overflow: scroll;
@@ -403,6 +404,7 @@ $colores: (
     margin-bottom: 20px;
     p{
         font-size: 18px;
+        font-family: 'Roboto', sans-serif;
     }
     img{
         width: 100%;
@@ -410,7 +412,7 @@ $colores: (
 }
 .nombMiembro{
     margin-top: 20px;
-    font-family: $fuenteTexto;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: bold;
 }
@@ -430,11 +432,14 @@ $colores: (
     margin-bottom: 20px;
     h2{
         font-size: 24px;
-        font-family: $fuenteTexto;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
     }
     img{
         width: 100%;
+    }
+    .infoDisc{
+        font-family: 'Roboto', sans-serif;
     }
 }
 .nombDisc{

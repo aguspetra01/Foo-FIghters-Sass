@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -437,7 +438,7 @@ button, input, optgroup, select, textarea {
 }
 
 .textoBio {
-  font-family: "Louis George Café", regular;
+  font-family: 'Roboto', sans-serif;
   height: 245px;
   font-size: 18px;
   overflow: scroll;
@@ -517,6 +518,7 @@ button, input, optgroup, select, textarea {
 
 .contMiem p {
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contMiem img {
@@ -525,7 +527,7 @@ button, input, optgroup, select, textarea {
 
 .nombMiembro {
   margin-top: 20px;
-  font-family: "Louis George Café", regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: bold;
 }
@@ -550,12 +552,16 @@ button, input, optgroup, select, textarea {
 
 .contDisc h2 {
   font-size: 24px;
-  font-family: "Louis George Café", regular;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
 .contDisc img {
   width: 100%;
+}
+
+.contDisc .infoDisc {
+  font-family: 'Roboto', sans-serif;
 }
 
 .nombDisc {
