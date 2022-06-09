@@ -46,17 +46,13 @@
     <!--BARRA NAVEGACION FIN-->
     <br>
     <br>
-    <form action="enviar .php" method="post" data-netlify="true" netlify enctype="text/plain">
+    <form name="contacto" method="POST" data-netlify="true" enctype="text/plain">
         <section class="formulario">
             <p id="tituloCont">¡Contactanos!</p>
             <!--<label for="">Nombre</label>-->
-            <input class="ingresarTexto" type="text" placeholder="Escriba su nombre" required> <!--required es para que si o si ingrese el dato-->
+            <input class="ingresarTexto" type="text" placeholder="Escriba su nombre y apellido" required> <!--required es para que si o si ingrese el dato-->
             <br>
-            <input class="ingresarTexto" type="text" placeholder="Escriba su apellido" required>
-            <br>
-            <input class="ingresarTexto" type="number" placeholder="Escriba su telefono" required>
-            <br>
-            <input class="ingresarTexto" type="mail" placeholder="Escriba su mail" required>
+            <input class="ingresarTexto" type="email" placeholder="Escriba su email" required>
             <br>
             <!--AREA PARA ESCRIBIR-->
             <select class="elegirPais" name="Pais">
@@ -67,10 +63,11 @@
                 <option>Ecuador</option>
                 <option>Uruguay</option>
             </select>
-            <br>
-            <input class="botones" type="submit" value="Enviar">
+            <textarea name="mensaje" id="message" placeholder="Escribinos tu mensaje!"></textarea>
             <br>
             <input class="botones" type="reset" value="Borrar">
+            <br>
+            <input class="botones" type="submit" value="Enviar">
         </section>
     </form>
     <!--PIE DE PÁGINA INICIO-->

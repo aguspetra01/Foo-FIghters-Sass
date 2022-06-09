@@ -129,7 +129,6 @@ html{
     border-radius: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(255, 255, 255);
-    font-family: $fuenteTexto;
     font-size: 16px;
     color: white;
     background-color: black;
@@ -138,7 +137,6 @@ html{
     width: 200px;
     height: 35px;
     border-style: none;
-    font-family: $fuenteTexto;
     font-size: 14px;
     border-radius: 10px;
     color: white;
@@ -147,6 +145,17 @@ html{
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 15px;
+}
+#message{
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+    font-family: 'Dosis 200', sans-serif;
 }
 .botones{
     width: 300px;
@@ -158,13 +167,14 @@ html{
     border-style: none;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     transition: all 0.5s;
 }
 .botones:hover{
     background-color: rgb(89, 89, 89);
     color: rgb(255, 255, 255);
     transition: all 0.5s;
+    border: 1px solid white;
 }
 @media only screen and (max-width:465px){
     .formulario{
